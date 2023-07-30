@@ -24,6 +24,8 @@ Documents what was learned during the first project at the course [Microfrontend
       - aliases filenames
       - which files will be exposed externally, filenames used when imported on host container or other external
 - Host and Remote applications
+- Shared Modules
+  - Sharing dependencies between microfrontends.
 
 ## Contact
 
