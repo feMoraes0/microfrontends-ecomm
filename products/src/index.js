@@ -1,10 +1,6 @@
-import faker from 'faker';
-
-let products = '';
-
-for(let i = 0; i < 3; i++) {
-  const name = faker.commerce.productName();
-  products += `<div>${name}</div>`;
-}
-
-document.querySelector('#dev-products').innerHTML = products;
+/**
+ * webpack will load asynchronously boostrap
+ * and check dependencies before load
+ * what will not trigger error due shared dependencies
+ */
+import('./bootstrap');
