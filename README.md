@@ -26,6 +26,18 @@ Documents what was learned during the first project at the course [Microfrontend
 - Host and Remote applications
 - Shared Modules
   - Sharing dependencies between microfrontends.
+  - Different versions won't be shared automatically, so each project can use the specific one without any unexpected behaviour.
+  - Singleton: configuration that defines that only one version of the shared dependencies can be downloaded/used in all of the sub-projects.
+
+  ```javascript
+  ...
+  shared: {
+    dependency_name: {
+      singleton: true
+    }
+  }
+  ...
+  ```
 
 ## Contact
 
